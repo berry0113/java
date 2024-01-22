@@ -1,4 +1,4 @@
-package rensyu.nyuryoku;
+package rensyu.nyuryoku.mondai11;
 import java.util.Scanner;
 // メインの機能
 class K_a {
@@ -12,7 +12,7 @@ class K_a {
         a.printer();
     }
 }
-// クラスの制作
+// 計算などのクラスの作成
 class Circle {
     // それぞれの型の指定
     int x;
