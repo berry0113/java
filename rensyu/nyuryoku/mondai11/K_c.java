@@ -16,6 +16,7 @@ class Gyudon2{
     // 型の指定
     int x;
     int y;
+    
     // メインのほうに二つの数値を使うことができるようにする
     Gyudon2(int x, int y){
         this.x = x;

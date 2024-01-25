@@ -1,15 +1,18 @@
-package rensyu.nyuryoku;
+package rensyu.nyuryoku.mondai13;
+
+import rensyu.nyuryoku.mondai13.M_c.Teacher;
 
 /**
  * 人クラス
  * 
 */
-class Person {
+abstract class Person {
     // 名前
     String name = "";
     // 職業
     String job = "";
 
+    
     /**
      * コンストラクタ
      * 
@@ -25,10 +28,7 @@ class Person {
      * 自己紹介
      * 
      */
-    void introduce(){
-        System.out.println("氏名："+name);
-        System.out.println("職業："+job);
-    }
+    abstract void introduce();
 }
         
 
@@ -59,7 +59,7 @@ class Teacher extends Person {
      * 自己紹介
      * 
      */
-    void introduce() {
+    @Override void introduce() {
         System.out.println("氏名："+this.name);
         System.out.println("職業："+this.job);
         System.out.println("担当科目："+this.subject);
@@ -92,7 +92,7 @@ class Cook extends Person {
      * 自己紹介
      * 
      */
-    void introduce() {
+    @Override void introduce() {
         System.out.println("氏名："+this.name);
         System.out.println("職業："+this.job);
         System.out.println("得意料理："+this.specialites);
@@ -102,12 +102,12 @@ class Cook extends Person {
 /**
  * メイン処理クラス
  */
-public class I_b { 
+public class M_a { 
     public static void main(String[] args) {
         // 教師クラス作成
-        Teacher teacher = new Teacher("近藤勇", "教員", "Go言語");
+        Teacher teacher = new Teacher("竹井一馬", "教員", "情報処理");
         // 料理人クラス作成
-        Cook cook = new Cook("沖田総司", "シェフ", "オムライス");
+        Cook cook = new Cook("大原太郎", "シェフ", "オムライス");
         
         // 自身の情報を表示
         teacher.introduce();

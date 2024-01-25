@@ -19,7 +19,7 @@ class Student {
     // ------- [ メソッド ] -------
     // どうやっても小数点以下の切り捨てができなかったので教えてください
     double Average() {
-        double goukei = (kokugo + suugaku + eigo)/3;
+        double goukei = (this.kokugo + this.suugaku + this.eigo)/3;
         return goukei;
     }
     // ----------------------------
