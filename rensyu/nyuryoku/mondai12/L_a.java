@@ -11,6 +11,8 @@ class Calculator {
         System.out.println("Sum "+x+" and "+y+" = "+z);
     }
     // 平均
+
+
     void calcAve(int x, int y){
         double z = (x + y)/2;
         System.out.println("Average "+x+" and "+y+" = "+z);
@@ -22,7 +24,7 @@ class MoreCalc extends Calculator {
     MoreCalc(int x, int y){super(x, y);}
     // 掛け算
     void calcPow(int x, int y){
-        int z = x * y;
+        double z = Math.pow(x, y);
         System.out.println("Power "+x+" of "+y+" = "+z);
     }
 }
